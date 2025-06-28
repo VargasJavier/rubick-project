@@ -1,45 +1,7 @@
 import { useEffect, useState } from "react";
 import TabContent from "../contents/TabContent";
-import imageTab1 from "../../../assets/services/services-image-1.jpg"
+import { tabs } from "../../../data/tabs";
 
-type Tab = {
-  id: string;
-  label: string;
-  image: any;
-  link: string;
-  description: string;
-};
-
-const tabs: Tab[] = [
-  {
-    id: 'tab1',
-    label: 'Identidad de Marca',
-    image: imageTab1,
-    link: '/servicios/tab1',
-    description: 'Impulsar el tráfico y los clientes potenciales específicos con estrategias creativas adaptadas a sus ambiciones de crecimiento.'
-  },
-  {
-    id: 'tab2',
-    label: 'Mercadotecnia Digital',
-    image: imageTab1,
-    link: '/servicios/tab2',
-    description: 'Impulsar el tráfico y los clientes potenciales específicos con estrategias creativas adaptadas a sus ambiciones de crecimiento.'
-  },
-  {
-    id: 'tab3',
-    label: 'Desarrollo Web',
-    image: imageTab1,
-    link: '/servicios/tab3',
-    description: 'Impulsar el tráfico y los clientes potenciales específicos con estrategias creativas adaptadas a sus ambiciones de crecimiento.'
-  },
-  {
-    id: 'tab4',
-    label: 'Diseño UI UX',
-    image: imageTab1,
-    link: '/servicios/tab4',
-    description: 'Impulsar el tráfico y los clientes potenciales específicos con estrategias creativas adaptadas a sus ambiciones de crecimiento.'
-  },
-];
 
 const Description = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
