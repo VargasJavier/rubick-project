@@ -6,3 +6,10 @@ interface IProject {
   link: string;
   image: string;
 }
+interface IReview {
+  description: string;
+  authorImage: string;
+  authorName: string;
+  authorJob: string;
+  rating: number;
+}

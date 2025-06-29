@@ -3,7 +3,7 @@ import ProjectsList from './ProjectsList'
 
 const ProjectsContainer = () => {
   return (
-    <section>
+    <section className='sectionProjects'>
       <div className='containerHeaderProjects'>
         <h3 className='titleHeaderProject'>Proyectos</h3>
         <p className='subtitleHeaderProject'>Un escaparate seleccionado de nuestro trabajo más impactante, que combina estrategia, narración de historias e imágenes destacadas.</p>

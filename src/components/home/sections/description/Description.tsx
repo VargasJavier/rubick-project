@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import TabContent from "../contents/TabContent";
-import { tabs } from "../../../data/tabs";
+import TabContent from "../../contents/TabContent";
+import { tabs } from "../../../../data/tabs";
 
 
 const Description = () => {

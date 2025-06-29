@@ -1,7 +1,8 @@
 import './home.css'
-import Description from './sections/Description'
-import Hero from './sections/Hero'
+import Description from './sections/description/Description'
+import Hero from './sections/hero/Hero'
 import ProjectsContainer from './sections/projects/ProjectsContainer'
+import ReviewsContainer from './sections/reviews/ReviewsContainer'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <Description />
       <ProjectsContainer />
+      <ReviewsContainer />
     </main>
   )
 }

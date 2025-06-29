@@ -191,6 +191,9 @@
   color: #fff;
   outline: none;
 }
+.tabButton:focus {
+  outline: none;
+}
 .tabsContent {
   width: 60%;
   padding: 24px;
@@ -228,6 +231,9 @@
 
 /* PROJECTS */
 
+.sectionProjects {
+  padding-bottom: 4rem;
+}
 .containerHeaderProjects {
   display: flex;
   align-items: center;
@@ -260,7 +266,16 @@
   cursor: pointer;
   border-radius: 1.5rem;
   height: auto;
+  position: sticky;
+  top: 20px;
+  transition-duration: .6s;
   transition-property: all;
+}
+.project:nth-child(2) {
+  top: 60px;
+}
+.project:nth-child(3) {
+  top: 90px;
 }
 .projectLink {
   color: white;
