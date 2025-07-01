@@ -8,8 +8,8 @@ const BlogsList = ({blogsList}: BlogList) => {
   return (
     <div className='containerBlogsList'>
       {
-        blogsList.map((blog: IBlog) => (
-          <Blog blog={blog} />
+        blogsList.map((blog: IBlog, index: number) => (
+          <Blog blog={blog} key={index}/>
         ))
       }
     </div>

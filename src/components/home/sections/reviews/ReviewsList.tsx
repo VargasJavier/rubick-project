@@ -8,8 +8,8 @@ const ReviewsList = ({reviewsList}: IReviewList) => {
   return (
     <div className='containerReviewsList'>
       {
-        reviewsList.map((review: IReview) => (
-          <Review review={review} />
+        reviewsList.map((review: IReview, index: number) => (
+          <Review review={review} key={index}/>
         ))
       }
     </div>

@@ -8,8 +8,8 @@ const ProjectsList = ({projectsList}: ProjectList) => {
   return (
     <div className='containerProjectsList'>
       {
-        projectsList.map((project: IProject) => (
-          <Project project={project} />
+        projectsList.map((project: IProject, index: number) => (
+          <Project project={project} key={index}/>
         ))
       }
     </div>
