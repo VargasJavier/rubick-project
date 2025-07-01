@@ -1,5 +1,5 @@
 .main {
-  height: 200vh;
+  min-height: 200vh;
 }
 .hero {
   background-image: url('https://cdn.prod.website-files.com/67fa31c445aa6489f30f3b50/6800d39639225a09a757d7dd_home_hero_banner.png');
@@ -326,4 +326,228 @@
   .projectLink:hover {
     color: white;
   }
+}
+
+/* REVIEWS */
+.sectionReviews {
+  background-color: #0d0d0e;
+  padding: 2.5rem 0 3.5rem;
+}
+.containerHeaderReviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-bottom: 1px solid #322f2f;
+}
+.titleHeaderReview {
+  font-size: 4rem;
+}
+.subtitleHeaderReview {
+  display: flex;
+  gap: 1rem;
+  max-width: 410px;
+  color: #a4a4a5;
+  font-size: 1.125rem;
+  text-align: left;
+  line-height: 162%;
+}
+.arrowReview {
+  color: #29292b;
+  font-size: 3rem;
+  cursor: pointer;
+  aspect-ratio: 1;
+  background-color: #151516;
+  border: 1px solid #151516;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  transition-duration: .6s;
+  transition-property: all;
+}
+.arrowReviewContentLeft::before,
+.arrowReviewContentRight::before {
+  content: "\f053";
+}
+.containerReviewsList {
+  display: flex;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: start;
+  background-color: #151516;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 512px;
+  padding: 1rem 2rem;
+}
+.reviewDescription {
+  text-align: left;
+  color: #a4a4a5;
+  font-size: 1.125rem;
+  line-height: 162%;
+  margin-block: 0;
+  transition: color .6s;
+}
+.containerReviewText {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.reviewContentProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileReviewImage {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviewText {
+  margin-block: 0;
+  text-align: left;
+}
+.reviewTextName {
+  font-size: 1.25rem;
+  line-height: 100%;
+  font-weight: 600;
+}
+.reviewTextJob {
+  font-size: 0.875rem;
+  color: #a4a4a5;
+  margin-top: 10px;
+  line-height: 100%;
+}
+.contentStarReview {
+  display: flex;
+  gap: .3rem;
+}
+@media (hover:hover) {
+  .arrowReview:hover {
+    background-color: #7160cf;
+    color: white;
+  }
+}
+
+/* BLOGS HOME */
+.containerBlogs {
+  padding: 2rem 0 5rem;
+}
+.containerBlogsList {
+  display: flex;
+  align-items: center;
+  min-height: 55vh;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.containerHeaderBlogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.titleHeaderBlog {
+  font-size: 4rem;
+}
+.subtitleHeaderBlog {
+  max-width: 410px;
+  color: #a4a4a5;
+  font-size: 1.125rem;
+  text-align: left;
+  line-height: 162%;
+}
+.blogItemHome {
+  width: 50%;
+  border: 1px solid #322f2f;
+  background-color: #0d0d0e;
+  border-radius: 1.5rem;
+  padding: 2rem 2.5rem;
+}
+.contentBlogImageDate {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.blogImage {
+  width: 65%;
+  border-radius: 1rem;
+}
+.blogDateCreation {
+  padding: .75rem 1.25rem;
+  font-size: 1.125rem;
+  border-radius: 3rem;
+  color: #a4a4a5;
+  line-height: 156%;
+  border: 1px solid #c4c2c636;
+}
+.blogBody {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.bodyBlogTitle {
+  font-size: 1.9rem;
+  color: white;
+  font-weight: 500;
+  margin-block: 0.5rem;
+}
+.bodyBlogDescription {
+  color: #a4a4a5;
+  line-height: 162%;
+  font-size: 1.125rem;
+  margin-block: 0;
+}
+
+/* LETS TALK */
+.containerLetsTalk {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-color: #0d0d0e;
+}
+.absoluteLetsTalk {
+  position: absolute;
+  width: 160px;
+  top: 40%;
+  left: 45%;
+  display: flex;
+  aspect-ratio: 1;
+  -webkit-backdrop-filter: blur(12.7px);
+  backdrop-filter: blur(12.7px);
+  color: #101010;
+  font-size: 1.25rem;
+  line-height: 140%;
+  font-weight: 500;
+  background-color: #ffffff8a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition-property: all;
+}
+.contentLetsTalk {
+  width: 75%;
+  max-width: 1280px;
+  line-height: 16rem;
+  letter-spacing: 0.25rem;
+  font-size: 20rem;
+  font-weight: 800;
+  text-align: center;
 }

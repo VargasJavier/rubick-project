@@ -13,3 +13,10 @@ interface IReview {
   authorJob: string;
   rating: number;
 }
+interface IBlog {
+  image: string;
+  dateCreation: string;
+  title: string;
+  shortDescription: string;
+  link: string;
+}

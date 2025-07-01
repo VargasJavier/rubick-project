@@ -3,7 +3,6 @@ interface IProjectItem {
 }
 
 const Project = ({ project }: IProjectItem) => {
-  console.log('LOG', project)
   return (
     <section className="project">
       <a className="projectLink" href={project.link}>

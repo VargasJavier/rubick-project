@@ -6,7 +6,14 @@ const ReviewsContainer = () => {
     <section className="sectionReviews">
       <div className='containerHeaderReviews'>
         <h3 className='titleHeaderReview'>Reseñas</h3>
-        <p className='subtitleHeaderReview'>Un escaparate seleccionado de nuestro trabajo más impactante, que combina estrategia, narración de historias e imágenes destacadas.</p>
+        <div className='subtitleHeaderReview'>
+          <button className="arrowReview arrowReviewLeft">
+            {'<'}
+          </button>
+          <button className="arrowReview arrowReviewRight">
+            {'>'}
+          </button>
+        </div>
       </div>
       <section>
         <ReviewsList reviewsList={reviewsList}/>
