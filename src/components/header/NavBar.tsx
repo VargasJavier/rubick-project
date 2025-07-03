@@ -1,7 +1,7 @@
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="desktop">
       <ul className="navBarList">
         <li className="navBarItem selected">Home</li>
         <li className="navBarItem">Acerca de</li>

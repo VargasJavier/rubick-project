@@ -7,7 +7,10 @@ const Header = () => {
     <header className="header">
       <Logo />
       <NavBar />
-      <button>Iniciar</button>
+      <button className="desktop">Iniciar</button>
+      <button className="mobile iconMenu">
+        <img src="https://cdn.prod.website-files.com/67fa31c445aa6489f30f3b50/6800cf73a1e0f62e0614647c_menu.svg" alt="Ícono de hamburguesa"/>
+      </button>
     </header>
   )
 }

@@ -3,7 +3,7 @@ import banner from '../../../../assets/foto-wallpaper.jpg'
 const Hero = () => {
   return (
     <section className="hero">
-        <div className='tag'>
+        <div className='tag desktop'>
           <p className='tagText'>
             <span className='tagYears'>12+</span>
             Años de experiencia

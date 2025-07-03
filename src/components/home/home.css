@@ -7,8 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
+  min-height: calc(100vh - 190px);
   position: relative;
-  padding-top: 210px;
+  padding-top: 140px;
+  padding-bottom: 3rem;
   overflow: hidden;
 }
 .tag {
@@ -54,8 +56,8 @@
   width: 80%;
   max-width: 850px;
   margin: 0 auto;
-  font-size: 11rem;
-  line-height: 9.5rem;
+  font-size: 3.5rem;
+  line-height: 3rem;
   margin-block: .5rem;
   letter-spacing: -0.2rem;
   font-weight: 800;
@@ -65,44 +67,76 @@
 }
 .containerBanner {
   display: flex;
-  margin-top: -3rem;
+  margin-top: -1rem;
   justify-content: center;
   z-index: 2;
 }
 .contentBanner {
-  width: 60%;
+  width: 90%;
   max-width: 900px;
 }
 .banner {
   width: 100%;
-  height: 80%;
   border-radius: 1rem;
   object-position: top;
   object-fit: cover;
 }
 .footerBanner {
   display: flex;
+  align-items: start;
+  flex-direction: column;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   max-width: 1280px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
+  margin: 2rem auto;
 }
 .footerText {
-  width: 40%;
   color: #a4a4a5;
   text-align: left;
+  font-size: 1.25rem;
 }
 .footerYear {
   font-size: 2.5rem;
   font-weight: 800;
 }
+@media screen and (min-width: 680px) {
+  .hero {
+    padding-top: 210px;
+    padding-bottom: 0;
+  }
+  .title {
+    width: 80%;
+    max-width: 850px;
+    font-size: 11rem;
+    line-height: 9.5rem;
+    margin-block: .5rem;
+    letter-spacing: -0.2rem;
+  }
+  .containerBanner {
+    margin-top: -3rem;
+  }
+  .contentBanner {
+    width: 80%;
+  }
+  .banner {
+    height: 80%;
+  }
+  .footerBanner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .footerText {
+    width: 40%;
+    font-size: 1.5rem;
+  }
+}
 
 /* DESCRIPTION */
 
 .descriptionContainer {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background-color: #0d0d0e;
 }
 .descriptionContent {
@@ -110,8 +144,8 @@
 }
 .descriptionText {
   color: #717171;
-  font-size: 3.25rem;
-  width: 75%;
+  font-size: 1.7rem;
+  width: 95%;
   margin: 0 auto;
 }
 .separator {
@@ -128,10 +162,11 @@
   justify-content: space-between;
   align-items: center;
   max-width: 991px;
-  margin-top: 128px;
+  margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  padding: 1rem;
 }
 .stadisticsItem {
   display: flex;
@@ -141,8 +176,8 @@
   color: #a4a4a5;
 }
 .stadisticsNumber {
-  font-size: 5rem;
-  height: 110px;
+  font-size: 2.5rem;
+  height: 68px;
   font-weight: 500;
   color: white;
 }
@@ -152,14 +187,16 @@
   height: 112px;
 }
 .servicesTitle {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: start;
   max-width: 1280px;
-  margin: 2rem auto 4rem;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
 }
 .tabsContainer {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   width: 100%;
   min-height: 300px;
@@ -169,10 +206,10 @@
   overflow: hidden;
 }
 .tabsMenu {
-  width: 40%;
   display: flex;
-  gap: 1.5rem;
+  gap: .75rem;
   flex-direction: column;
+  padding: 1rem;
 }
 .tabButton {
   padding: .75rem 1rem .75rem 0;
@@ -183,7 +220,7 @@
   background-color: transparent;
   color: #717171;
   transition: background-color 0.2s ease;
-  font-size: 2.62rem;
+  font-size: 2rem;
   font-weight: 400;
   border: none;
 }
@@ -195,21 +232,21 @@
   outline: none;
 }
 .tabsContent {
-  width: 60%;
   padding: 24px;
 }
 .tabContent {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 4rem;
 }
 .tabContentImage {
-  width: 50%;
+  width: 90%;
+  margin: 0 auto;
   border-radius: 1rem;
 }
 .tabContentText {
-  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -228,6 +265,60 @@
   background-color: #7160cf;
   color: white;
 }
+@media screen and (min-width: 680px) {
+  .servicesTitle {
+    padding: 0;
+    font-size: 4rem;
+    margin: 2rem auto 4rem;
+  }
+  .tabsContainer {
+    flex-direction: row;
+    gap: 1.5rem;
+    min-height: 300px;
+    max-width: 1280px;
+  }
+  .tabsMenu {
+    width: 40%;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  .tabButton {
+    font-size: 2.62rem;
+  }
+  .tabsContent {
+    width: 60%;
+    flex-direction: row;
+  }
+  .tabContentImage {
+    width: 50%;
+  }
+  .tabContentText {
+    width: 45%;
+  }
+  .descriptionContainer {
+    padding: 6rem 0;
+  }
+  .stadisticsNumber {
+    font-size: 5rem;
+    height: 110px;
+  }
+  .descriptionText {
+    width: 75%;
+    font-size: 3.25rem;
+  }
+  .containerStadistics {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 991px;
+    margin-top: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 0;
+  }
+}
 
 /* PROJECTS */
 
@@ -236,13 +327,15 @@
 }
 .containerHeaderProjects {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .titleHeaderProject {
   font-size: 4rem;
+  margin-block: .5rem;
+  text-align: start;
+  margin-left: 1rem;
 }
 .subtitleHeaderProject {
   max-width: 410px;
@@ -250,6 +343,7 @@
   font-size: 1.125rem;
   text-align: left;
   line-height: 162%;
+  padding: 0 1rem;
 }
 .containerProjectsList {
   max-width: 1280px;
@@ -260,7 +354,7 @@
   gap: 1.5rem;
 }
 .project {
-  padding: 1rem 80px;
+  padding: 1rem;
   border: 1px solid #322f2f;
   background-color: #0d0d0e;
   cursor: pointer;
@@ -295,12 +389,11 @@
 }
 .projectBody {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 1rem;
   gap: 2.5rem;
 }
 .bodyImage {
-  width: 50%;
   border-radius: 1.5rem;
 }
 .contentBodyText {
@@ -310,6 +403,7 @@
   justify-content: end;
 }
 .bodyTitle {
+  margin-block: 0;
   font-size: 2rem;
   line-height: 131%;
 }
@@ -320,11 +414,41 @@
 }
 
 @media (hover:hover) {
+  .project {
+    padding: 1rem 80px;
+  }
   .project:hover {
     background-color: #7160cf;
   }
   .projectLink:hover {
     color: white;
+  }
+  .containerHeaderProjects {
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .titleHeaderProject {
+    font-size: 4rem;
+    margin-block: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .subtitleHeaderProject {
+    padding: 0;
+  }
+  .projectBody {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bodyImage {
+    width: 50%;
+  }
+  .bodyTitle {
+    margin-block: 1rem;
+    font-size: 2rem;
+    line-height: 131%;
   }
 }
 
@@ -335,14 +459,16 @@
 }
 .containerHeaderReviews {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
   border-bottom: 1px solid #322f2f;
 }
 .titleHeaderReview {
   font-size: 4rem;
+  text-align: start;
+  margin-left: 2rem;
+  margin-block: .5rem;
 }
 .subtitleHeaderReview {
   display: flex;
@@ -352,6 +478,7 @@
   font-size: 1.125rem;
   text-align: left;
   line-height: 162%;
+  padding: 1rem 2rem;
 }
 .arrowReview {
   color: #29292b;
@@ -374,10 +501,11 @@
 }
 .containerReviewsList {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 1.5rem;
 }
 .reviewCard {
   display: flex;
@@ -386,7 +514,6 @@
   justify-content: start;
   background-color: #151516;
   border-radius: 1rem;
-  width: 100%;
   max-width: 512px;
   padding: 1rem 2rem;
 }
@@ -436,6 +563,27 @@
     background-color: #7160cf;
     color: white;
   }
+  .titleHeaderReview {
+    font-size: 4rem;
+    margin-left: 0;
+    line-height: 4rem;
+    margin-block: 1rem;
+  }
+  .subtitleHeaderReview {
+    padding: 0;
+  }
+  .containerReviewsList {
+    flex-direction: row;
+    padding: 3rem 0;
+  }
+  .reviewCard {
+    width: 100%;
+  }
+  .containerHeaderReviews {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /* BLOGS HOME */
@@ -444,17 +592,17 @@
 }
 .containerBlogsList {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   min-height: 55vh;
   gap: 2rem;
   justify-content: center;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 1rem;
 }
 .containerHeaderBlogs {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -469,11 +617,10 @@
   line-height: 162%;
 }
 .blogItemHome {
-  width: 50%;
   border: 1px solid #322f2f;
   background-color: #0d0d0e;
   border-radius: 1.5rem;
-  padding: 2rem 2.5rem;
+  padding: 1rem 1.5rem;
 }
 .contentBlogImageDate {
   display: flex;
@@ -511,27 +658,43 @@
   margin-block: 0;
 }
 
+@media screen and (min-width: 680px) {
+  .containerBlogsList {
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+  }
+  .blogItemHome {
+    width: 50%;
+    padding: 2rem 2.5rem;
+  }
+  .containerHeaderBlogs {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
 /* LETS TALK */
 .containerLetsTalk {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 90vh;
+  padding: 2rem 1rem;
   background-color: #0d0d0e;
 }
 .absoluteLetsTalk {
   position: absolute;
-  width: 160px;
   top: 40%;
-  left: 45%;
+  left: 37.5%;
   display: flex;
   aspect-ratio: 1;
   -webkit-backdrop-filter: blur(12.7px);
   backdrop-filter: blur(12.7px);
   color: #101010;
-  font-size: 1.25rem;
+  font-size: .95rem;
+  width: 100px;
   line-height: 140%;
   font-weight: 500;
   background-color: #ffffff8a;
@@ -543,11 +706,26 @@
   transition-property: all;
 }
 .contentLetsTalk {
-  width: 75%;
   max-width: 1280px;
-  line-height: 16rem;
-  letter-spacing: 0.25rem;
-  font-size: 20rem;
+  line-height: 6rem;
+  font-size: 4rem;
   font-weight: 800;
   text-align: center;
+}
+@media screen and (min-width: 680px) {
+  
+  .containerLetsTalk {
+    height: 90vh;
+  }
+  .absoluteLetsTalk {
+    width: 160px;
+    top: 40%;
+    left: 45%;
+  }
+  .contentLetsTalk {
+    font-size: 20rem;
+    letter-spacing: 0.25rem;
+    line-height: 16rem;
+    width: 75%;
+  }
 }
