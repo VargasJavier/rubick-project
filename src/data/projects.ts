@@ -13,7 +13,7 @@ export const projectsList: IProject[] = [
   },
   {
     title: 'Pulsefit',
-    type: 'Desarrollo de App',
+    type: 'Mobile App',
     subtitle: 'Pulsefit Gym Website',
     description: 'Un innovador sitio web de plataforma SaaS construido con los principios de diseño «user-first», que ofrece una navegación fluida y una presentación dinámica de los contenidos.',
     link: '/proyecto/pulsefit',
