@@ -6,7 +6,7 @@ const ProjectsContainer = () => {
     <section className='sectionProjects'>
       <div className='containerHeaderProjects'>
         <h3 className='titleHeaderProject'>Proyectos</h3>
-        <p className='subtitleHeaderProject'>Un escaparate seleccionado de nuestro trabajo más impactante, que combina estrategia, narración de historias e imágenes destacadas.</p>
+        <p className='subtitleHeaderProject'>Que nuestro trabajo hable por nosotros. Hemos seleccionados este grupo de proyectos recientes para ti.</p>
       </div>
       <section>
         <ProjectsList projectsList={projectsList}/>

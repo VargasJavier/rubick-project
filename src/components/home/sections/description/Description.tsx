@@ -16,13 +16,13 @@ const Description = () => {
   return (
       <section className='descriptionContainer'>
         <section className="descriptionContent">
-          <p className='descriptionText'>{`Eleva tu presencia digital con distinción,\nsumergir\nen una creatividad sin límites. Nuestro equipo de\nDiseñadores y desarrollo Pioneros\nEnciende mostrador Tu visión digital`}</p>
+          <p className='descriptionText'>{`Trabajamos en tu presencia digital. Brindamos asesorías en SEO, Desarrollo Web, Ecommerce, CRM's, Integraciones, y mucho más`}</p>
           <div className='containerStadistics'>
-          <div className='stadisticsItem'><span className='stadisticsNumber'>40+</span>Clientes satisfechos</div>
+          <div className='stadisticsItem'><span className='stadisticsNumber'>+10</span>Clientes satisfechos</div>
           <div className="stadisticsItemLine"></div>
-          <div className='stadisticsItem'><span className='stadisticsNumber'>100+</span>Proyectos entregados</div>
+          <div className='stadisticsItem'><span className='stadisticsNumber'>+33</span>Proyectos entregados</div>
           <div className="stadisticsItemLine"></div>
-          <div className='stadisticsItem'><span className='stadisticsNumber'>12+</span>Años de experiencia</div>
+          <div className='stadisticsItem'><span className='stadisticsNumber'>+5</span>Años de experiencia</div>
           </div>
       </section>
       <div className="separator"></div>

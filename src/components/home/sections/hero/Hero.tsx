@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
         </div>
         <div className='footerBanner'>
-          <p className='footerText'>Combinamos la imaginación con la estrategia para lograr resultados impactantes</p>
+          <p className='footerText'>Combinamos la imaginación con la estrategia para lograr los resultados importantes</p>
           <span className='footerYear'>@2025</span>
         </div>
       </section>
