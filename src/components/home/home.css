@@ -157,8 +157,8 @@
   margin-bottom: 5rem;
 }
 .containerStadistics {
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   justify-content: space-between;
   align-items: center;
   max-width: 991px;
@@ -212,7 +212,7 @@
   padding: 1rem;
 }
 .tabButton {
-  padding: .75rem 1rem .75rem 0;
+  padding: .5rem 1rem .5rem 0;
   text-align: left;
   border: none;
   outline: none;
@@ -220,7 +220,7 @@
   background-color: transparent;
   color: #717171;
   transition: background-color 0.2s ease;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   border: none;
 }
@@ -283,6 +283,7 @@
     padding: 0;
   }
   .tabButton {
+    padding: .75rem 1rem .75rem 0;
     font-size: 2.62rem;
   }
   .tabsContent {
@@ -383,17 +384,19 @@
   justify-content: space-between;
 }
 .projectHeaderTitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-block: .25rem;
 }
 .projectHeaderType {
   border: 1px solid #ffffff47;
   border-radius: 90px;
-  padding: 1rem 3rem;
+  padding: .75rem 2rem;
+  font-size: .8rem;
 }
 .projectBody {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: .75rem;
   gap: 2.5rem;
 }
 .bodyImage {
@@ -412,14 +415,11 @@
 }
 .bodyDescription {
   color: #a4a4a5;
-  text-align: start;
-  font-size: 1.125rem;
+  text-align: center;
+  font-size: .9rem;
 }
 
 @media (hover:hover) {
-  .project {
-    padding: 1rem 80px;
-  }
   .project:hover {
     background-color: #7160cf;
   }
@@ -429,11 +429,18 @@
 }
 
 @media screen and (min-width: 680px) {
+  .project {
+    padding: 1rem 80px;
+  }
   .containerHeaderProjects {
     margin: 0 auto 2rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  .projectHeaderTitle {
+    font-size: 2.5rem;
+    margin-block: 1rem;
   }
   .titleHeaderProject {
     font-size: 4rem;
@@ -444,8 +451,15 @@
   .subtitleHeaderProject {
     padding: 0;
   }
+  .projectHeaderType {
+    border: 1px solid #ffffff47;
+    border-radius: 90px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+  }
   .projectBody {
     flex-direction: row;
+    padding: 1rem;
     justify-content: space-between;
   }
   .bodyImage {
@@ -455,6 +469,10 @@
     margin-block: 1rem;
     font-size: 2rem;
     line-height: 131%;
+  }
+  .bodyDescription {
+    font-size: 1.125rem;
+    text-align: start;
   }
 }
 
@@ -477,7 +495,7 @@
   margin-block: .5rem;
 }
 .subtitleHeaderReview {
-  display: flex;
+  display: none;
   gap: 1rem;
   max-width: 410px;
   color: #a4a4a5;
@@ -506,12 +524,15 @@
   content: "\f053";
 }
 .containerReviewsList {
+  padding: 3rem 1.5rem;
+  margin-right: 1rem;
+  overflow-x: auto;
+}
+.contentReviewsList {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
 }
 .reviewCard {
   display: flex;
@@ -521,12 +542,12 @@
   background-color: #151516;
   border-radius: 1rem;
   max-width: 512px;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 }
 .reviewDescription {
   text-align: left;
   color: #a4a4a5;
-  font-size: 1.125rem;
+  font-size: .9rem;
   line-height: 162%;
   margin-block: 0;
   transition: color .6s;
@@ -534,16 +555,19 @@
 .containerReviewText {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .75rem;
 }
 .reviewContentProfile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 .profileReviewImage {
   border-radius: 50%;
   overflow: hidden;
+  height: 42px;
+  width: 42px;
 }
 .reviewText {
   margin-block: 0;
@@ -564,6 +588,10 @@
   display: flex;
   gap: .3rem;
 }
+.starIcon {
+  width: 16px;
+  height: 16px;
+}
 @media (hover:hover) {
   .arrowReview:hover {
     background-color: #7160cf;
@@ -578,20 +606,42 @@
     margin-block: 1rem;
   }
   .subtitleHeaderReview {
+    display: flex;
     padding: 0;
   }
   .containerReviewsList {
-    flex-direction: row;
     padding: 3rem 0;
+    margin-right: 0;
+  }
+  .contentReviewsList {
+    flex-direction: row;
   }
   .reviewCard {
     width: 100%;
+    padding: 1rem 2rem;
   }
   .containerHeaderReviews {
     padding: 2rem 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  .reviewDescription {
+    font-size: 1.125rem;
+  }
+  .profileReviewImage {
+    height: 64px;
+    width: 64px;
+  }
+  .containerReviewText {
+    gap: 1rem;
+  }
+  .starIcon {
+    width: 24px;
+    height: 24px;
+  }
+  .reviewContentProfile {
+    gap: 0;
   }
 }
 

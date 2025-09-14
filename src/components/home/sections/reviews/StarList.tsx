@@ -9,11 +9,11 @@ const StarList = ({ rating }: { rating: number }) => {
   const estrellas = [];
 
   for (let i = 0; i < estrellasCompletas; i++) {
-    estrellas.push(<img key={`full-${i}`} src={starIcon} alt={'Ícono de estrella'} width={24} height={24} />);
+    estrellas.push(<img key={`full-${i}`} src={starIcon} alt={'Ícono de estrella'} width={24} height={24} className='starIcon'/>);
   }
 
   if (tieneMediaEstrella) {
-    estrellas.push(<img key="half" src={halfStarIcon} alt={`Ícono de media estrella`} width={24} height={24} />);
+    estrellas.push(<img key="half" src={halfStarIcon} alt={`Ícono de media estrella`} width={24} height={24} className='starIcon halfStarIcon'/>);
   }
 
   return <div className='contentStarReview'>{estrellas}</div>;
