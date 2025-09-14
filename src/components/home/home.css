@@ -650,28 +650,34 @@
   padding: 2rem 0 5rem;
 }
 .containerBlogsList {
-  display: flex;
-  flex-direction: column;
   min-height: 55vh;
-  gap: 2rem;
-  justify-content: center;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 1rem 1rem 0 0;
   padding: 1rem;
+  overflow-x: auto;
+}
+.contentBlogsList {
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
 }
 .containerHeaderBlogs {
   display: flex;
   flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #322f2f;
 }
 .titleHeaderBlog {
-  font-size: 4rem;
+  font-size: 3rem;
+  text-align: start;
+  margin-block: .5rem;
 }
 .subtitleHeaderBlog {
   max-width: 410px;
   color: #a4a4a5;
-  font-size: 1.125rem;
+  font-size: .9rem;
   text-align: left;
   line-height: 162%;
 }
@@ -679,22 +685,23 @@
   border: 1px solid #322f2f;
   background-color: #0d0d0e;
   border-radius: 1.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
+  min-width: 240px;
 }
 .contentBlogImageDate {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: start;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 .blogImage {
   width: 100%;
   border-radius: 1rem;
 }
 .blogDateCreation {
-  padding: .75rem 1.25rem;
-  font-size: 1.125rem;
+  padding: .5rem 1rem;
+  font-size: .85rem;
   border-radius: 3rem;
   color: #a4a4a5;
   line-height: 156%;
@@ -706,23 +713,32 @@
   align-items: start;
 }
 .bodyBlogTitle {
-  font-size: 1.9rem;
+  font-size: 1.2rem;
   color: white;
+  text-align: start;
   font-weight: 500;
   margin-block: 0.5rem;
 }
 .bodyBlogDescription {
   color: #a4a4a5;
   line-height: 162%;
-  font-size: 1.125rem;
+  font-size: .85rem;
   margin-block: 0;
 }
 
 @media screen and (min-width: 680px) {
+  .titleHeaderBlog {
+    font-size: 4rem;
+    margin-left: 0;
+  }
   .containerBlogsList {
     align-items: center;
     flex-direction: row;
+    margin: 0 auto;
     padding: 0;
+  }
+  .contentBlogsList {
+    justify-content: center;
   }
   .blogItemHome {
     width: 50%;
@@ -732,6 +748,8 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    padding: 2rem 0 1.5rem;
+    margin-bottom: 3rem;
   }
   .contentBlogImageDate {
     flex-direction: row;
@@ -739,8 +757,26 @@
     justify-content: space-between;
     margin-bottom: 2.5rem;
   }
+  .blogDateCreation {
+    padding: .75rem 1.25rem;
+    font-size: 1.125rem;
+    line-height: 156%;
+  }
   .blogImage {
     width: 65%;
+  }
+  .subtitleHeaderBlog {
+    font-size: 1.125rem;
+  }
+  .bodyBlogTitle {
+    font-size: 1.9rem;
+    margin-block: 0.5rem;
+    text-align: center;
+  }
+  .bodyBlogDescription {
+    line-height: 162%;
+    font-size: 1.125rem;
+    margin-block: 0;
   }
 }
 
@@ -755,12 +791,12 @@
 }
 .absoluteLetsTalk {
   position: absolute;
-  top: 40%;
+  top: 33.5%;
   left: 37.5%;
   display: flex;
   aspect-ratio: 1;
-  -webkit-backdrop-filter: blur(12.7px);
-  backdrop-filter: blur(12.7px);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   color: #101010;
   font-size: .95rem;
   width: 100px;
@@ -790,6 +826,8 @@
     width: 160px;
     top: 40%;
     left: 45%;
+    -webkit-backdrop-filter: blur(12.7px);
+    backdrop-filter: blur(12.7px);
   }
   .contentLetsTalk {
     font-size: 20rem;
